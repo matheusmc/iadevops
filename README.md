@@ -13,7 +13,7 @@ preferred tool. (terraform, cloud formation or ansible);
 ## Provisionamento da infraestrutura
 
 Optei para fazer o deploy dos serviços numa instancia (t2.medium) na insfraestrutura da AWS utilizando o Terraform para o provisionamento da infra na AWS e o Ansible para o gerenciamento de configuração desse servidor. Explicarei com mais detalhes nas próximas sessões.
-<p style="text-align: center;">![Image](https://i.ibb.co/KmsFRHs/Chef-Automate-1.png)</p>
+![Image](https://i.ibb.co/KmsFRHs/Chef-Automate-1.png)
 
 
 ```bash

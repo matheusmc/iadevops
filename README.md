@@ -27,7 +27,7 @@ Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes fe
 
 No diretório terraform_aws estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repósitório https://github.com/brokedba/terraform-examples e destaco os seguintes trechos:
 
-Iniciando instãncia
+Iniciando instãncia - compute.tf
 
 ```terraform
 resource "aws_instance" "terra_inst" {
@@ -54,7 +54,20 @@ resource "aws_instance" "terra_inst" {
     #user_data = filebase64("${path.module}/example.sh") 
     # user_data                   = "${file(var.user_data)}"
     # user_data_base64            = var.user_data_base64
+    
+    }
 ```
+
+Criação de VPC - vpc.tf
+
+```
+resource "aws_vpc" "terra_vpc" {
+    cidr_block                       = var.vpc_cidr
+    tags                             = {
+        "Name" = var.vpc_name
+    }
+}```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

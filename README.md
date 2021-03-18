@@ -27,7 +27,7 @@ A figura abaixo representa a estrutura lógica da infra utilizada:
 
 ## Provisonando AWS com Terraform
 
-No diretório **terraform_aws** estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repósitório https://github.com/brokedba/terraform-examples. Com o código foi criada na AWS as seguintes configurações:
+No diretório **terraform_aws** estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repósitório https://github.com/brokedba/terraform-examples para cosntuir o meu projeto. Com o código foi criada na AWS as seguintes configurações:
 
 * Região: sa-east-1 
 * Uma instância do tipo t2.medium

@@ -139,7 +139,39 @@ gitlab_runner_runners:
 $ ansible-playbook  main.yml -i hosts
 ```
 
+## Configuração de CI/CD no GitLab
+
+
 Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

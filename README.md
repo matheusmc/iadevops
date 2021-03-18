@@ -60,13 +60,15 @@ resource "aws_instance" "terra_inst" {
 
 Criação de VPC - vpc.tf
 
-```
+```terraform
 resource "aws_vpc" "terra_vpc" {
     cidr_block                       = var.vpc_cidr
     tags                             = {
         "Name" = var.vpc_name
     }
-}```
+}
+
+```
 
 
 ## Contributing

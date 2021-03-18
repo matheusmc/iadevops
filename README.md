@@ -110,7 +110,26 @@ No diretório **ansible** estão os códigos que utilizei para configurar basica
 18.229.156.110 ansible_user=ubuntu ansible_ssh_private_key_file="devops.pem"
 }
 ```
+* arquivo main - para chamar os outros playbooks em sequência
 
+```ansible
+#arquivo para acionar playbooks em sequência.
+#Autor: Matheus Medeiros
+- name: Install_Docker
+  import_playbook: provi_docker.yml
+
+- name: Register_GitLab_runner_app
+  import_playbook: gitlab-runner-app.yml
+```
+
+* no arquivo app.yml é o local onde cofiguro o tokem de registro do GitLab Runner
+
+```ansible
+#fonte: https://github.com/riemers/ansible-gitlab-runner
+gitlab_runner_coordinator_url: https://gitlab.com
+gitlab_runner_registration_token: 'yourToken'
+gitlab_runner_runners:
+```
 
 Please make sure to update tests as appropriate.
 

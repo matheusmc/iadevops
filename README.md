@@ -25,15 +25,35 @@ Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes fe
 
 ## Provisonando AWS com Terraform
 
-Utilizei scripts de Terraform para montar o cenário na AWS, me basei no repósitório  https://github.com/brokedba/terraform-examples
+No diretório terraform_aws estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repósitório https://github.com/brokedba/terraform-examples e destaco os seguintes trechos:
 
+Iniciando instãncia
 
 ```terraform
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+resource "aws_instance" "terra_inst" {
+    count         = var.instance_count
+    ami                          = var.instance_ami_id["UBUNTU"]
+    availability_zone            = data.aws_availability_zones.ad.names[0]
+    #cpu_core_count               = 1
+    #cpu_threads_per_core         = 1
+    disable_api_termination      = false
+    ebs_optimized                = false
+    get_password_data            = false
+    hibernation                  = false
+    instance_type                = var.instance_type
+   # private_ip                   = var.private_ip
+    associate_public_ip_address  = var.map_public_ip_on_launch
+    key_name                     = var.key_name
+    #key_name = var.key_name
+    monitoring                   = false
+    secondary_private_ips        = []
+    security_groups              = []
+    source_dest_check            = true
+    subnet_id                    = aws_subnet.terra_sub.id
+    user_data                    = filebase64(var.user_data)
+    #user_data = filebase64("${path.module}/example.sh") 
+    # user_data                   = "${file(var.user_data)}"
+    # user_data_base64            = var.user_data_base64
 ```
 
 ## Contributing

@@ -1,6 +1,0 @@
-- hosts: monitoramento
-  become: true
-  vars_files:
-    - vars/monitoring.yml
-  roles:
-    - { role: riemers.gitlab-runner }

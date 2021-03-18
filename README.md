@@ -92,7 +92,7 @@ resource "aws_route53_zone" "primary" {
 Para executar a implantação do cógido do Terraform, utilizei os seguintes comandos:
 
 ```
-**$ terraform init** #para inicializar um diretório de trabalho contendo arquivos de configuração do Terraform
+$ terraform init #para inicializar um diretório de trabalho contendo arquivos de configuração do Terraform
 $ terraform plan #para criar um plano de execução. 
 $ terraform apply #para aplicar as mudanças 
 $ terraform destroy -target aws_instance.terra_inst #para desfazer uma configuração específica

@@ -102,7 +102,7 @@ $ terraform destroy -target aws_instance.terra_inst #para desfazer uma configura
 
 No diretório **ansible** estão os códigos que utilizei para configurar a instância EC2, basicamente foi realizada a instalação da engine Docker e para registrar  no GitLab Runner, segue trechos dos códigos dos scripts Ansible:
 
-* arquivo hosts
+* arquivo **hosts**
 
 ```ansible
 #endereço da instância na AWS
@@ -110,7 +110,7 @@ No diretório **ansible** estão os códigos que utilizei para configurar a inst
 18.229.156.110 ansible_user=ubuntu ansible_ssh_private_key_file="devops.pem"
 }
 ```
-* arquivo main - para chamar os outros playbooks em sequência
+* arquivo **main.yml** - para chamar os outros playbooks em sequência
 
 ```ansible
 #arquivo para acionar playbooks em sequência.
@@ -122,7 +122,7 @@ No diretório **ansible** estão os códigos que utilizei para configurar a inst
   import_playbook: gitlab-runner-app.yml
 ```
 
-* no arquivo app.yml é o local onde cofiguro o tokem de registro do GitLab Runner
+* no **arquivo app.yml** é o local onde cofiguro o tokem de registro do GitLab Runner
 
 ```ansible
 #fonte: https://github.com/riemers/ansible-gitlab-runner
@@ -130,6 +130,8 @@ gitlab_runner_coordinator_url: https://gitlab.com
 gitlab_runner_registration_token: 'yourToken'
 gitlab_runner_runners:
 ```
+
+* O Arquivo **provi_docker.yml** é o responsável pela instalação da engine docker e docker compose
 
 * Para executar a implantação do cógido do Ansible, utilizei o seguinte comando:
 

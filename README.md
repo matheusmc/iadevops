@@ -14,7 +14,7 @@ preferred tool. (terraform, cloud formation or ansible);
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
-![Image](https://ibb.co/Lvgnbfg)	
+![Image](https://i.ibb.co/KmsFRHs/Chef-Automate-1.png)	
 
 ```bash
 pip install foobar

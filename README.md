@@ -70,6 +70,13 @@ resource "aws_vpc" "terra_vpc" {
 
 ```
 
+Zona DNS
+
+```terraform
+resource "aws_route53_zone" "primary" {
+  name = "matheusmc.com.br"
+}
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

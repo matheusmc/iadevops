@@ -1,3 +1,4 @@
+#docker-compose de uma aplicação wordpress
 version: '3.1'
 
 services:

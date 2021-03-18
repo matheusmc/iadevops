@@ -10,7 +10,7 @@ preferred tool. (terraform, cloud formation or ansible);
 - Presenting the monitoring/status of this application (tools of your choice);
 - Write documentation of this website/app clearly and objectively;
 
-## Installation
+## Provisionamento da infraestrutura
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 

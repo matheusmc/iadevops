@@ -19,6 +19,8 @@ Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes fe
 * Docker: para subir a aplicação WEB, no caso foi uma imágem de WORDPRESS;
 * Monitoramento: stack de monitoramento com Prometheus, Grafana, CADVASOR e NODE EXPORT;
 
+A figura abaixo representa a estrutura lógica da infra utilizada:
+
 ![Image](https://i.ibb.co/GvbCKpf/aws.png)
 
 

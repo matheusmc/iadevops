@@ -131,6 +131,12 @@ gitlab_runner_registration_token: 'yourToken'
 gitlab_runner_runners:
 ```
 
+* Para executar a implantação do cógido do Ansible, utilizei o seguinte comando:
+
+```
+$ ansible-playbook  main.yml -i hosts
+```
+
 Please make sure to update tests as appropriate.
 
 ## License

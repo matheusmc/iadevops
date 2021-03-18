@@ -25,6 +25,9 @@ Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes fe
 
 ## Provisonando AWS com Terraform
 
+Utilizei scripts de Terraform para montar o cenário na AWS, me basei no repósitório  https://github.com/brokedba/terraform-examples
+
+
 ```terraform
 import foobar
 

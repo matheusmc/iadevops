@@ -1,3 +1,5 @@
+#Fonte: https://github.com/brokedba/terraform-examples
+
 # Aws account region and autehntication 
 #variable "aws_access_key" {}
 #variable "aws_secret_key" {}

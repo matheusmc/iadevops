@@ -1,4 +1,5 @@
-#playbook instala a engine docker e faz o registro no gitlabRunner
+#arquivo para acionar playbooks em sequência.
+#Autor: Matheus Medeiros
 - name: Install_Docker
   import_playbook: provi_docker.yml
 

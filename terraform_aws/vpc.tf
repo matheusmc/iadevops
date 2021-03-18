@@ -1,4 +1,6 @@
- terraform {
+#arquivo para criação de VPC, Security Group, SUBNET, DNS, Security Group. Fonte: https://github.com/brokedba/terraform-examples
+#Editado por Matheus Medeiros
+terraform {
       required_version = ">= 0.12.0"
     }
 # Provider specific configs

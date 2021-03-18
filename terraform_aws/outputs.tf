@@ -1,3 +1,4 @@
+#Fonte: https://github.com/brokedba/terraform-examples
 output "vpc_Name" {
       description = "Name of created VPC. "
       value       = "${lookup(aws_vpc.terra_vpc.tags, "Name")}"

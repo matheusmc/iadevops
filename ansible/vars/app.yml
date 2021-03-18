@@ -1,3 +1,5 @@
+#playbook para registro do GitLab Runner. Fonte: https://github.com/riemers/ansible-gitlab-runner
+#Editado por: Matheus Medeiros
 gitlab_runner_coordinator_url: https://gitlab.com
 gitlab_runner_registration_token: 'yourToken'
 gitlab_runner_runners:

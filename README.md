@@ -1,6 +1,6 @@
 # Teste Técnico - vaga DevOps 
 
-A presente documentação tem a finalidade de rigistrar os passos execeutados para a conclusão do desafio proposto pela equipe de recrutamento do Instituto Atlântico, que foi assim proposto:
+A presente documentação tem a finalidade de rigistrar os passos execeutados para a conclusão do desafio proposto pela equipe de recrutamento do Instituto Atlântico, onde o desafio foi assim descrito:
 
 - Simple website/app using Docker;
 - CI/CD (your choice);

@@ -25,7 +25,16 @@ Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes fe
 
 ## Provisonando AWS com Terraform
 
-No diretório **terraform_aws** estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repósitório https://github.com/brokedba/terraform-examples e destaco os seguintes trechos:
+No diretório **terraform_aws** estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repósitório https://github.com/brokedba/terraform-examples. Com o código foi criada na AWS as seguintes configurações:
+
+* Região: sa-east-1 
+* Uma instância do tipo t2.medium
+* VPC subnet 192.168.0.0/16
+* Subnet:192.168.0.0/24
+* ecurity group ports: 80, 443, 22, 9090 ...
+* route53 zone: matheusmc.com.br
+
+Na sequância, trexos dos códigos utilizados.
 
 Iniciando instância - compute.tf
 
@@ -87,11 +96,10 @@ $ terraform apply #para aplicar as mudanças
 $ terraform destroy -target aws_instance.terra_inst #para desfazer uma configuração específica
 ```
 
+## Gerenciamento de Configuração com o Ansible
 
+Utilizei o Ansible para gerenciar a configuração da instância que foi configurada 
 
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 

@@ -1,7 +1,14 @@
-# iadevops
-# Foobar
+# Teste Técnico - vaga DevOps 
 
-Foobar is a Python library for dealing with word pluralization.
+A presente documentação tem a finalidade de rigistrar os passos execeutados para a conclusão do desafio proposto pela equipe de recrutamento do Instituto Atlântico, que foi assim proposto:
+
+- Simple website/app using Docker;
+- CI/CD (your choice);
+- Provisioning the infrastructure you needed to accomplish this challenge, using your
+preferred tool. (terraform, cloud formation or ansible);
+- Deploy that website/app in this infrastructure;
+- Presenting the monitoring/status of this application (tools of your choice);
+- Write documentation of this website/app clearly and objectively;
 
 ## Installation
 

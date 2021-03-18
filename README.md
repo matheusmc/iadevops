@@ -70,13 +70,20 @@ resource "aws_vpc" "terra_vpc" {
 
 ```
 
-Zona DNS
+Zona DNS - vpc.tf
 
 ```terraform
 resource "aws_route53_zone" "primary" {
   name = "matheusmc.com.br"
 }
 ```
+Para executar a implantação do cógido do Terraform, utilizei os seguintes comandos:
+
+```
+terraform init
+´´´
+
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

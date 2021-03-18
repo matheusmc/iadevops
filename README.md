@@ -22,11 +22,8 @@ Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes fe
 ![Image](https://i.ibb.co/GvbCKpf/aws.png)
 
 
-```bash
-pip install foobar
-```
 
-## Usage
+## Provisonando AWS com Terraform
 
 ```python
 import foobar

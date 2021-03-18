@@ -38,7 +38,7 @@ No diretório **terraform_aws** estão os códigos em Terraform que utilizei par
 
 Na sequância, trexos dos códigos utilizados.
 
-Iniciando instância - compute.tf
+*Iniciando instância - compute.tf
 
 ```terraform
 resource "aws_instance" "terra_inst" {
@@ -69,7 +69,7 @@ resource "aws_instance" "terra_inst" {
     }
 ```
 
-Criação de VPC - vpc.tf
+*Criação de VPC - vpc.tf
 
 ```terraform
 resource "aws_vpc" "terra_vpc" {
@@ -81,7 +81,7 @@ resource "aws_vpc" "terra_vpc" {
 
 ```
 
-Zona DNS - vpc.tf
+*Zona DNS - vpc.tf
 
 ```terraform
 resource "aws_route53_zone" "primary" {
@@ -102,7 +102,7 @@ $ terraform destroy -target aws_instance.terra_inst #para desfazer uma configura
 
 No diretório **ansible** estão os códigos que utilizei para configurar basicamente a instalação da engine Docker e para registrar a instância EC2 no GitLab Runner, segue trechos dos códigos das ações mensionadas:
 
-arquivo hosts
+*arquivo hosts
 
 ```ansible
 #endereço da instância na AWS

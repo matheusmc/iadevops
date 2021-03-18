@@ -1,3 +1,5 @@
+#playbook para instalar engine docker. Fonte: https://graspingtech.com/install-docker-ansible/
+#Editado por: Matheus Medeiros
 ---
 - hosts: all
   become: yes

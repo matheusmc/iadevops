@@ -77,11 +77,14 @@ resource "aws_route53_zone" "primary" {
   name = "matheusmc.com.br"
 }
 ```
+
 Para executar a implantação do cógido do Terraform, utilizei os seguintes comandos:
 
 ```
 terraform init
-´´´
+
+```
+
 
 
 

@@ -38,7 +38,7 @@ No diretório **terraform_aws** estão os códigos em Terraform que utilizei par
 
 Na sequância, trexos dos códigos utilizados.
 
-*Iniciando instância - compute.tf
+* Iniciando instância - compute.tf
 
 ```terraform
 resource "aws_instance" "terra_inst" {
@@ -69,7 +69,7 @@ resource "aws_instance" "terra_inst" {
     }
 ```
 
-*Criação de VPC - vpc.tf
+* Criação de VPC - vpc.tf
 
 ```terraform
 resource "aws_vpc" "terra_vpc" {
@@ -81,7 +81,7 @@ resource "aws_vpc" "terra_vpc" {
 
 ```
 
-*Zona DNS - vpc.tf
+* Zona DNS - vpc.tf
 
 ```terraform
 resource "aws_route53_zone" "primary" {
@@ -89,7 +89,7 @@ resource "aws_route53_zone" "primary" {
 }
 ```
 
-Para executar a implantação do cógido do Terraform, utilizei os seguintes comandos:
+* Para executar a implantação do cógido do Terraform, utilizei os seguintes comandos:
 
 ```
 $ terraform init #para inicializar um diretório de trabalho contendo arquivos de configuração do Terraform

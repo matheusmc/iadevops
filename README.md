@@ -100,7 +100,7 @@ $ terraform destroy -target aws_instance.terra_inst #para desfazer uma configura
 
 ## Gerenciamento de Configuração com o Ansible
 
-No diretório **ansible** estão os códigos que utilizei para configurar basicamente a instalação da engine Docker e para registrar a instância EC2 no GitLab Runner, segue trechos dos códigos das ações mensionadas:
+No diretório **ansible** estão os códigos que utilizei para configurar a instância EC2, basicamente foi realizada a instalação da engine Docker e para registrar  no GitLab Runner, segue trechos dos códigos dos scripts Ansible:
 
 * arquivo hosts
 

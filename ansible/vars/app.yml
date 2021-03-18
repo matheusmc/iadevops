@@ -1,5 +1,5 @@
 gitlab_runner_coordinator_url: https://gitlab.com
-gitlab_runner_registration_token: 'K5EcWfKhMzzCXvx5kUTX'
+gitlab_runner_registration_token: ''
 gitlab_runner_runners:
   - name: 'Example Docker GitLab Runner'
     # token is an optional override to the global gitlab_runner_registration_token

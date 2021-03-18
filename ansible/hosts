@@ -1,2 +1,3 @@
+#endereço da instância na AWS
 [app]
 18.229.156.110 ansible_user=ubuntu ansible_ssh_private_key_file="devops.pem"

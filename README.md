@@ -25,7 +25,7 @@ Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes fe
 
 ## Provisonando AWS com Terraform
 
-No diretório terraform_aws estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repósitório https://github.com/brokedba/terraform-examples e destaco os seguintes trechos:
+No diretório **terraform_aws** estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repósitório https://github.com/brokedba/terraform-examples e destaco os seguintes trechos:
 
 Iniciando instãncia - compute.tf
 

@@ -10,9 +10,15 @@ preferred tool. (terraform, cloud formation or ansible);
 - Presenting the monitoring/status of this application (tools of your choice);
 - Write documentation of this website/app clearly and objectively;
 
-## Provisionamento da infraestrutura
+## Explicando a infraestrutura utilizada
 
-Optei para fazer o deploy dos serviços numa instancia (t2.medium) na insfraestrutura da AWS utilizando o Terraform para o provisionamento da infra na AWS e o Ansible para o gerenciamento de configuração desse servidor. Explicarei com mais detalhes nas próximas sessões.
+Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes ferramentas:
+* Terraform: para provisionar a instancia EC2, VPC com sua sub-rede, Gateway, Security Group, entre outros.
+* Ansible: para o gerenciamento de configuração da instância;
+* [GitLab](https://gitlab.com/): utilizei a versão do site oficial como ferramenta para o CI/CD juntamente com o GitLab Runner para fazer o deploy direto na instancia EC2;
+* Docker: para subier a aplicação WEB, no caso foi uma imágem de WORDPRESS;
+* Monitoramento: stack de monitoramento com Prometheus, Grafana, CADVASOR e NODE EXPORT;
+
 ![Image](https://i.ibb.co/GvbCKpf/aws.png)
 
 

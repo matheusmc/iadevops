@@ -33,7 +33,7 @@ No diretório **terraform_aws** estão os códigos em Terraform que utilizei par
 * Uma instância do tipo t2.medium
 * VPC subnet 192.168.0.0/16
 * Subnet:192.168.0.0/24
-* ecurity group ports: 80, 443, 22, 9090 ...
+* Security group ports: 80, 443, 22, 9090 ...
 * route53 zone: matheusmc.com.br
 
 Na sequância, trexos dos códigos utilizados.

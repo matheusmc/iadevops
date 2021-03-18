@@ -100,7 +100,16 @@ $ terraform destroy -target aws_instance.terra_inst #para desfazer uma configura
 
 ## Gerenciamento de Configuração com o Ansible
 
-Utilizei o Ansible para gerenciar a configuração da instância que foi configurada 
+No diretório **ansible** estão os códigos que utilizei para configurar basicamente a instalação da engine Docker e para registrar a instância EC2 no GitLab Runner, segue trechos dos códigos das ações mensionadas:
+
+arquivo hosts
+
+```ansible
+#endereço da instância na AWS
+[app]
+18.229.156.110 ansible_user=ubuntu ansible_ssh_private_key_file="devops.pem"
+}
+```
 
 
 Please make sure to update tests as appropriate.

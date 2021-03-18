@@ -25,7 +25,7 @@ Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes fe
 
 ## Provisonando AWS com Terraform
 
-```python
+```terraform
 import foobar
 
 foobar.pluralize('word') # returns 'words'

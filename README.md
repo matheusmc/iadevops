@@ -209,7 +209,9 @@ Por fim no menu CI/CD do GitLab podemos executar os pipelines tanto no modo auto
 
 ## Monitoramento
 
-Nesse Laboratório utilizei uma stack de monitoramento que utiliza 
+Nesse Laboratório utilizei uma stack de monitoramento que utiliza o Prometheus, Grafana, Cadvisor, Node Exporte. Nesse estágio utilizei os passos disponíveis no repositório https://github.com/badtuxx/giropops-monitoring.
+
+
 
 
 

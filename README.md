@@ -205,7 +205,7 @@ Por fim no menu CI/CD do GitLab podemos executar os pipelines tanto no modo auto
 
 ![Image](https://i.ibb.co/9hDbHhB/deploy.png)
  
- Após a execução o conteiner fica em produção, podendo verificar em: http://site.matheusmc.com.br/
+ Após a execução o conteiner fica em produção, que pode ser verificar em: http://site.matheusmc.com.br/
 
 
 Please make sure to update tests as appropriate.

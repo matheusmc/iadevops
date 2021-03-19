@@ -141,6 +141,10 @@ $ ansible-playbook  main.yml -i hosts
 
 ## Configuração de CI/CD no GitLab
 
+Utilize o GitLab como ferramenta de CI/CD nesse laboratório. Primeiramente configurei o GitLab Runner na máquina de destino, utilizando as configurações do Ansible como mostrado anteriomente, possibilitando executar um contaiener diretamente na máquina hospedada na AWS. O próximo passo, basicamente criei um projeto no GitLab no site oficial onde subi dois arquivos quem podem ser encontrados no dieretório **aplicacoes/app**
+
+O motivo da escolha do GitLab como ferramenta de CI/CD foi por utilizá-la em produção no trabalho atual, esta ferramenta ta
+
 
 ![Image](https://i.ibb.co/9hDbHhB/deploy.png)
 ![Image](https://i.ibb.co/6bzRjLG/pipelines.png)

@@ -141,7 +141,7 @@ $ ansible-playbook  main.yml -i hosts
 
 ## Configuração de CI/CD no GitLab
 
-Utilize o GitLab como ferramenta de CI/CD nesse laboratório. Primeiramente configurei o GitLab Runner na máquina de destino, utilizando as configurações do Ansible como mostrado anteriomente, possibilitando assim executar um contaiener diretamente na máquina hospedada na AWS. No passo seguinte, basicamente criei um projeto no GitLab (site oficial) onde subi dois arquivos quem podem ser encontrados no dieretório **aplicacoes/app**: .gitlab-ci.yml e docker-compose.yml.
+Utilize o GitLab como ferramenta de CI/CD nesse laboratório. Primeiramente configurei o GitLab Runner na máquina de destino, utilizando as configurações do Ansible (como mostrado anteriomente) , possibilitando assim executar um contaiener diretamente na máquina hospedada na AWS. No passo seguinte, basicamente criei um projeto no GitLab (site oficial) onde subi dois arquivos quem podem ser encontrados no dieretório **aplicacoes/app**: .gitlab-ci.yml e docker-compose.yml.
 
 * O .gitlab-ci.yml é o arqui que configuramos as etapas do pipiline da entrega do Software. Como é um teste simples, fiz somente o pipiple de deploy e undeploy. O obejtivos dessas linhas é chamar o GitLab Runner para executar o docker-compose na máquina remota:
 

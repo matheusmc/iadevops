@@ -19,7 +19,7 @@ Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes fe
 * Docker: para subir a aplicação WEB, no caso foi uma imágem de WORDPRESS;
 * Monitoramento: stack de monitoramento com Prometheus, Grafana, CADVASOR e NODE EXPORT;
 
-De forma resumida, o desenvolverdor faz a o CI/CD na versão web do [GitLab](https://gitlab.com/) que através da configuração do Gitlab Runner executa um container fazendo a implantação da aplicação na máquina de destino. A aplicação desse teste está rodando na porta 80 e pode se acessada através do link: http://site.matheusmc.com.br. Além da aplícação de teste, nessa máquina estão rodando as aplicações de monitoramento ([prometheus](http://18.229.156.110:9090/), [grafana](http://18.229.156.110:3000/) user: admin - pass: giropops, [cadvasor](http://18.229.156.110:8080/), [node exporte](http://18.229.156.110:9100/)). A figura abaixo representa a estrutura lógica da infra utilizada:
+De forma resumida, o desenvolverdor faz o CI/CD na versão web do [GitLab](https://gitlab.com/) que através da configuração do Gitlab Runner executa um container fazendo a implantação da aplicação na máquina de destino. A aplicação desse teste está rodando na porta 80 e pode se acessada através do link: http://site.matheusmc.com.br. Além da aplícação de teste, nessa máquina estão rodando as aplicações de monitoramento ([prometheus](http://18.229.156.110:9090/), [grafana](http://18.229.156.110:3000/) user: admin - pass: giropops, [cadvasor](http://18.229.156.110:8080/), [node exporte](http://18.229.156.110:9100/)). A figura abaixo representa a estrutura lógica da infra utilizada:
 
 ![Image](https://i.ibb.co/GvbCKpf/aws.png)
 

@@ -89,7 +89,7 @@ resource "aws_route53_zone" "primary" {
 }
 ```
 
-* Para executar a implantação do cógido do Terraform, utilizei os seguintes comandos:
+* Para executar a implantação do código do Terraform, utilizei os seguintes comandos:
 
 ```
 $ terraform init #para inicializar um diretório de trabalho contendo arquivos de configuração do Terraform
@@ -122,7 +122,7 @@ No diretório **ansible** estão os códigos que utilizei para configurar a inst
   import_playbook: gitlab-runner-app.yml
 ```
 
-* no arquivo **app.yml** é o local onde cofiguro o tokem de registro do GitLab Runner, esse token é obtido no site do GitLab:
+* no arquivo **app.yml** é feita a configuração do tokem de registro do GitLab Runner, esse token é obtido no site do GitLab:
 
 ```ansible
 #fonte: https://github.com/riemers/ansible-gitlab-runner

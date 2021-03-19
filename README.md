@@ -142,6 +142,11 @@ $ ansible-playbook  main.yml -i hosts
 ## Configuração de CI/CD no GitLab
 
 
+![Image](https://i.ibb.co/9hDbHhB/deploy.png)
+![Image](https://i.ibb.co/6bzRjLG/pipelines.png)
+![Image](https://i.ibb.co/6rjccXc/projeto.png)
+
+
 Please make sure to update tests as appropriate.
 
 ## License

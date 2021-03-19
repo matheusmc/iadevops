@@ -143,7 +143,7 @@ $ ansible-playbook  main.yml -i hosts
 
 Utilize o GitLab como ferramenta de CI/CD nesse laboratório. Primeiramente configurei o GitLab Runner na máquina de destino, utilizando a ferramenta Ansible (como mostrado anteriomente), possibilitando assim executar um contaiener diretamente na máquina hospedada na AWS. No passo seguinte, basicamente criei um projeto no GitLab (site oficial) onde subi dois arquivos quem podem ser encontrados no dieretório **aplicacoes/app**: .gitlab-ci.yml e docker-compose.yml.
 
-* O .gitlab-ci.yml é o arqui que configuramos as etapas do pipiline da entrega do Software. Como é um teste simples, fiz somente os stages de deploy e undeploy. O obejtivo desse código é chamar o GitLab Runner para executar o docker-compose na máquina remota:
+* **.gitlab-ci.yml** é o arqui que configuramos as etapas do pipiline da entrega do Software. Como é um teste simples, fiz somente os stages de deploy e undeploy. O obejtivo desse código é chamar o GitLab Runner para executar o docker-compose na máquina remota:
 
 ```ansible
 deploy:
@@ -164,6 +164,42 @@ undeploy:
     - apk add --no-cache docker-compose
     - docker-compose down
 ```
+
+* Em **docker-compose.yml** é onde está configurado a aplicação teste, neste caso um wordpress:
+```ansible
+#docker-compose de uma aplicação wordpress
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 80:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
+    volumes:
+      - wordpress:/var/www/html
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  wordpress:
+  db:
+ ```
 
 .gitlab-ci.yml
 

@@ -122,7 +122,7 @@ No diretório **ansible** estão os códigos que utilizei para configurar a inst
   import_playbook: gitlab-runner-app.yml
 ```
 
-* no arquivo **app.yml** é o local onde cofiguro o tokem de registro do GitLab Runner:
+* no arquivo **app.yml** é o local onde cofiguro o tokem de registro do GitLab Runner, esse token é obtido no site do GitLab:
 
 ```ansible
 #fonte: https://github.com/riemers/ansible-gitlab-runner

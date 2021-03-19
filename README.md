@@ -204,7 +204,8 @@ volumes:
 Por fim no menu CI/CD do GitLab ficam os pipelines que podem ser executados tanto no modo automático como no manual. Neste ambiente está manual, como mosta a figura:
 
 ![Image](https://i.ibb.co/9hDbHhB/deploy.png)
-
+ 
+ Após a execução o conteiner fica em produção, podendo verificar em: http://site.matheusmc.com.br/
 
 
 Please make sure to update tests as appropriate.

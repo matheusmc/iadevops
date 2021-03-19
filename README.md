@@ -165,7 +165,7 @@ undeploy:
     - docker-compose down
 ```
 
-* Em **docker-compose.yml** é onde está configurado a aplicação teste, neste caso um wordpress:
+* Em **docker-compose.yml** é onde está configurado os passos para o docker subir os containers da aplicação de teste, neste caso um wordpress:
 ```ansible
 #docker-compose de uma aplicação wordpress
 version: '3.1'
@@ -201,16 +201,10 @@ volumes:
   db:
  ```
 
-.gitlab-ci.yml
+Por fim no menu CI/CD do GitLab ficam os pipelines que podem ser executados tanto no modo automático como no manual, nesse ambiente está manual
 
-
-
-O motivo da escolha do GitLab como ferramenta de CI/CD foi por utilizá-la em produção no trabalho atual, esta ferramenta ta
-
-
-![Image](https://i.ibb.co/9hDbHhB/deploy.png)
 ![Image](https://i.ibb.co/6bzRjLG/pipelines.png)
-![Image](https://i.ibb.co/6rjccXc/projeto.png)
+
 
 
 Please make sure to update tests as appropriate.

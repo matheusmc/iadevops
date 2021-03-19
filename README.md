@@ -1,6 +1,6 @@
 # Teste Técnico - vaga DevOps 
 
-A presente documentação tem a finalidade de rigistrar os passos execeutados para a conclusão do desafio proposto pela equipe de recrutamento do Instituto Atlântico, onde o desafio foi assim descrito:
+A presente documentação tem a finalidade de registrar os passos executados para a conclusão do desafio proposto pela equipe de recrutamento do Instituto Atlântico, onde o desafio foi assim descrito:
 
 - Simple website/app using Docker;
 - CI/CD (your choice);
@@ -12,11 +12,11 @@ preferred tool. (terraform, cloud formation or ansible);
 
 ## Explicando a infraestrutura utilizada
 
-Para cumprir os passos solicitatos pelo desafio escolhi utilizar as seguintes ferramentas:
+Para cumprir os passos solicitados pelo desafio escolhi utilizar as seguintes ferramentas:
 * Terraform: para provisionar a instancia EC2, VPC com sua sub-rede, Gateway, Security Group, entre outros.
 * Ansible: para o gerenciamento de configuração da instância;
 * [GitLab](https://gitlab.com/): utilizei a versão do site oficial como ferramenta para o CI/CD juntamente com o GitLab Runner para fazer o deploy direto na instancia EC2;
-* Docker: para subir a aplicação WEB, no caso foi uma imágem de WORDPRESS;
+* Docker: para subir a aplicação WEB, no caso foi uma imagem de WORDPRESS;
 * Monitoramento: stack de monitoramento com Prometheus, Grafana, CADVASOR e NODE EXPORT;
 
 De forma resumida, o desenvolverdor faz o CI/CD na versão web do [GitLab](https://gitlab.com/) que através da configuração do Gitlab Runner executa um container fazendo a implantação da aplicação na máquina de destino. A aplicação desse teste está rodando na porta 80 e pode se acessada através do link: http://site.matheusmc.com.br. Além da aplícação de teste, nessa máquina estão rodando as aplicações de monitoramento ([prometheus](http://18.229.156.110:9090/), [grafana](http://18.229.156.110:3000/) user: admin - pass: giropops, [cadvasor](http://18.229.156.110:8080/), [node exporte](http://18.229.156.110:9100/)). A figura abaixo representa a estrutura lógica da infra utilizada:

@@ -133,7 +133,7 @@ gitlab_runner_runners:
 
 * O Arquivo **provi_docker.yml** é o responsável pela instalação da engine docker e docker compose.
 
-* Para executar a implantação do cógido do Ansible, utilizei o seguinte comando:
+* Para executar a implantação do código do Ansible, utilizei o seguinte comando:
 
 ```
 $ ansible-playbook  main.yml -i hosts

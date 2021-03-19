@@ -19,7 +19,7 @@ Para cumprir os passos solicitados pelo desafio escolhi utilizar as seguintes fe
 * Docker: para subir a aplicação WEB, no caso foi uma imagem de WORDPRESS;
 * Monitoramento: stack de monitoramento com Prometheus, Grafana, CADVASOR e NODE EXPORT;
 
-De forma resumida, o desenvolverdor faz o CI/CD na versão web do [GitLab](https://gitlab.com/) que através da configuração do Gitlab Runner executa um container fazendo a implantação da aplicação na máquina de destino. A aplicação desse teste está rodando na porta 80 e pode se acessada através do link: http://site.matheusmc.com.br. Além da aplícação de teste, nessa máquina estão rodando as aplicações de monitoramento ([prometheus](http://18.229.156.110:9090/), [grafana](http://18.229.156.110:3000/) user: admin - pass: giropops, [cadvasor](http://18.229.156.110:8080/), [node exporte](http://18.229.156.110:9100/)). A figura abaixo representa a estrutura lógica da infra utilizada:
+De forma resumida, o desenvolvedor faz o CI/CD na versão web do [GitLab](https://gitlab.com/) que através da configuração do Gitlab Runner executa um container fazendo a implantação da aplicação na máquina de destino. A aplicação desse teste está rodando na porta 80 e pode se acessada através do link: http://site.matheusmc.com.br. Além da aplicação de teste, nessa máquina estão rodando as aplicações de monitoramento ([prometheus](http://18.229.156.110:9090/), [grafana](http://18.229.156.110:3000/) user: admin - pass: giropops, [cadvasor](http://18.229.156.110:8080/), [node exporte](http://18.229.156.110:9100/)). A figura abaixo representa a estrutura lógica da infra utilizada:
 
 ![Image](https://i.ibb.co/GvbCKpf/aws.png)
 
@@ -27,7 +27,7 @@ De forma resumida, o desenvolverdor faz o CI/CD na versão web do [GitLab](https
 
 ## Provisonando AWS com Terraform
 
-No diretório **terraform_aws** estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repósitório https://github.com/brokedba/terraform-examples para cosntuir o meu projeto. Com o código foi criada na AWS as seguintes configurações:
+No diretório **terraform_aws** estão os códigos em Terraform que utilizei para montar o cenário na AWS, me baseei no repositório https://github.com/brokedba/terraform-examples para construir o meu projeto. Com o código foi criada na AWS as seguintes configurações:
 
 * Região: sa-east-1 
 * Uma instância do tipo t2.medium
@@ -36,7 +36,7 @@ No diretório **terraform_aws** estão os códigos em Terraform que utilizei par
 * Security group ports: 80, 443, 22, 9090 ...
 * route53 zone: matheusmc.com.br
 
-Na sequância, trexos dos códigos utilizados.
+Na sequência, trechos dos códigos utilizados.
 
 * Iniciando instância - compute.tf
 

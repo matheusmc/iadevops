@@ -207,12 +207,9 @@ Por fim no menu CI/CD do GitLab podemos executar os pipelines tanto no modo auto
  
  Após a execução o conteiner fica em produção, que pode ser verificar em: http://site.matheusmc.com.br/
 
+## Monitoramento
 
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
+Nesse Laboratório utilizei uma stack de monitoramento que utiliza 
 
 
 

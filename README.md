@@ -203,7 +203,7 @@ volumes:
 
 Por fim no menu CI/CD do GitLab ficam os pipelines que podem ser executados tanto no modo automático como no manual, nesse ambiente está manual
 
-![Image](https://i.ibb.co/6bzRjLG/pipelines.png)
+![Image](https://i.ibb.co/9hDbHhB/deploy.png)
 
 
 
